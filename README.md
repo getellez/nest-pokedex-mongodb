@@ -45,6 +45,12 @@ docker-compose up -d
 http://localhost:3000/api/v2/seed
 ```
 
+# Production build
+
+1. Crear el archivo ```.env.prod``` y llenar las variables de entorno
+2. Construir la imagen de docker `docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build`
+
+
 ## Tech Stack
 * MongoDB
 * Nest
